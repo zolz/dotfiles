@@ -1,0 +1,6 @@
+#!/bin/sh
+cd ~
+mkdir dotfiles
+cd dotfiles/
+git --git-dir=./.git --work-tree=../ init
+
