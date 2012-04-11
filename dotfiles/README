@@ -3,4 +3,5 @@ cd ~
 mkdir dotfiles
 cd dotfiles/
 git --git-dir=./.git --work-tree=../ init
-
+git add -f ../.README
+git add -f ../.gitignore
