@@ -72,3 +72,6 @@ nnoremap <leader>cd :cd %:p:h<CR>:pwd<CR>
 " Command-T
 let g:CommandTMaxFiles=30000
 
+" Ack
+let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+
