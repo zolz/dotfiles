@@ -28,7 +28,7 @@ set smartcase
 " Misc
 set nowrap
 set textwidth=79
-set colorcolumn=80
+"set colorcolumn=80
 set cursorline
 
 " Change colour of statusline in insert mode
@@ -62,6 +62,11 @@ map <C-F> :Ack --cc --cpp <cword>
 " Navigate compilation errors and search results
 map <F4> :cn<cr>
 map <S-F4> :cp<cr>
+
+" Navigate bookmarks
+map <C-S-F2> :ToggleBookmark<cr>
+map <F2> :NextBookmark<cr>
+map <S-F2> :PreviousBookmark<cr>
 
 " Toggle NERD tree
 map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
