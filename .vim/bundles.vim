@@ -17,6 +17,7 @@ Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdtree'
 Bundle 'mileszs/ack.vim'
 Bundle 'abudden/TagHighlight'
+Bundle 'dterei/VimBookmarking'
 Bundle 'tpope/vim-fugitive'
 
 " non github repos
