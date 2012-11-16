@@ -14,12 +14,11 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " original repos on github
-Bundle 'gmarik/vundle'
-Bundle 'tpope/vim-fugitive'
+Bundle 'scrooloose/nerdtree'
 Bundle 'mileszs/ack.vim'
 Bundle 'abudden/TagHighlight'
 Bundle 'dterei/VimBookmarking'
-Bundle 'scrooloose/nerdtree'
+Bundle 'tpope/vim-fugitive'
 
 " non github repos
 "Bundle 'git://git.wincent.com/command-t.git'
