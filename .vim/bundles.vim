@@ -14,14 +14,15 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " original repos on github
-Bundle 'scrooloose/nerdtree'
+Bundle 'gmarik/vundle'
+Bundle 'tpope/vim-fugitive'
 Bundle 'mileszs/ack.vim'
 Bundle 'abudden/TagHighlight'
 Bundle 'dterei/VimBookmarking'
-Bundle 'tpope/vim-fugitive'
+Bundle 'scrooloose/nerdtree'
 
 " non github repos
-Bundle 'git://git.wincent.com/command-t.git'
+"Bundle 'git://git.wincent.com/command-t.git'
 
 filetype plugin indent on     " required!
 

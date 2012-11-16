@@ -10,6 +10,8 @@ silent! runtime bundles.vim
 "  Misc
 "  ---------------------------------------------------------------------------
 
+set encoding=utf-8
+
 "colorscheme zenburn 
 "colorscheme wombat
 "colorscheme solarized
@@ -27,7 +29,7 @@ set smartcase
 
 " Misc
 set nowrap
-set textwidth=79
+"set textwidth=79
 "set colorcolumn=80
 set cursorline
 
@@ -44,13 +46,18 @@ set smarttab
 set shiftwidth=4
 set autoindent
 set expandtab
+"set listchars=eol:$,tab:→\ ,trail:·
+"set listchars=tab:→\ ,trail:·
+set listchars=tab:\|\¬,trail:·,extends:>,precedes:<
+set list
 set backspace=start,indent
 autocmd FileType make     set noexpandtab
 
 " Line numbers, syntax highlight
 "set number
-"set hlsearch
-"syntax on
+set ruler
+set hlsearch
+syntax on
 
 " Switch to alternate file
 map <C-Tab> :bnext<cr>
@@ -68,6 +75,16 @@ map <C-S-F2> :ToggleBookmark<cr>
 map <F2> :NextBookmark<cr>
 map <S-F2> :PreviousBookmark<cr>
 
+" Search
+map <F3> n
+map <S-F3> N
+
+" Copy/Paste
+nmap <C-V> "+gP
+imap <C-V> <ESC><C-V>i
+vmap <C-V> "+gP
+vmap <C-C> "+y
+
 " Toggle NERD tree
 map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
 
@@ -76,7 +93,4 @@ nnoremap <leader>cd :cd %:p:h<CR>:pwd<CR>
 
 " Command-T
 let g:CommandTMaxFiles=30000
-
-" Ack
-let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 
